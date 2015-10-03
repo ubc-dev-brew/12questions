@@ -22,13 +22,15 @@ var server = http.createServer(app)
 /*****************************************/
 
 app.get('/', function(req, res) {
-	//res.sendFile(path.join(__dirname + '/views/home.html'));
+	res.writeHead(200, {"Content-type": "text/plain"});
+	res.write("Welcome to DevBrew.");
+	res.end();
 });
 
 app.get('/questions/:question', function(req, res) {
 	
 });
 
-app.get('/resources/:resource'), function(req, res) {
+app.get('/resources/:resource', function(req, res) {
 	
 });
