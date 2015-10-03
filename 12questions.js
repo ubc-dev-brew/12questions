@@ -22,9 +22,13 @@ var server = http.createServer(app)
 /*****************************************/
 
 app.get('/', function(req, res) {
-	res.sendFile(path.join(__dirname + '/views/home.html'));
+	//res.sendFile(path.join(__dirname + '/views/home.html'));
 });
 
-app.get('/:question', function(req, res) {
+app.get('/questions/:question', function(req, res) {
+	
+});
+
+app.get('/resources/:resource'), function(req, res) {
 	
 });
