@@ -10,13 +10,13 @@ var DEFAULT_PORT = 3002;
 
 var http = require('http');
 var express = require('express');
-var 12questions = require('./package.json');
+var twelveQuestions = require('./package.json');
 
 var app = express();
 
 var server = http.createServer(app)
 .listen(process.env.PORT || process.argv[2] || DEFAULT_PORT, function() {
-	console.log('12questions v' + 12questions.version + ' running on port: %s', server.address().port);
+	console.log('12questions v' + twelveQuestions.version + ' running on port: %s', server.address().port);
 });
 
 /*****************************************/
