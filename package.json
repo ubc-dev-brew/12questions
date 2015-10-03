@@ -1,0 +1,14 @@
+{
+  "name": "12 Questions",
+  "version": "0.0.1",
+  "description": "Interface for viewing UBC Launch Pad members' responses to icebreaker questions",
+  "homepage": "https://github.com/danielchawla/12questions",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielchawla/12questions.git"
+  },
+  "engine": "node >= 0.12.2",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
+}
