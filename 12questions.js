@@ -11,7 +11,7 @@ var DEFAULT_PORT = 3002;
 var http = require('http');
 var express = require('express');
 var twelveQuestions = require('./package.json');
-
+var fs = require('fs');
 var app = express();
 
 var server = http.createServer(app)
@@ -24,9 +24,9 @@ var server = http.createServer(app)
 /*****************************************/
 
 app.get('/', function(req, res) {
-	res.writeHead(200, {"Content-type": "text/plain"});
-	res.write("Welcome to DevBrew.");
-	res.end();
+	res.writeHead(200, {"Content-type": "text/html"});
+	var html = fs.readFileSync(__dirname + '/views/index.html');
+	res.end(html);
 });
 
 app.get('/questions/:question', function(req, res) {
