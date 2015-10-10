@@ -13,6 +13,7 @@ var express = require('express');
 var twelveQuestions = require('./package.json');
 var fs = require('fs');
 var app = express();
+app.use('/static', express.static('assets'));
 
 var server = http.createServer(app)
 .listen(process.env.PORT || process.argv[2] || DEFAULT_PORT, function() {

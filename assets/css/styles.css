@@ -367,8 +367,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(../compass/fonts/bootstrap/glyphicons-halflings-regular.eot?1444494439);
-  src: url(../compass/fonts/bootstrap/glyphicons-halflings-regular.eot?&1444494439#iefix) format("embedded-opentype"), url(../compass/fonts/bootstrap/glyphicons-halflings-regular.woff2?1444494439) format("woff2"), url(../compass/fonts/bootstrap/glyphicons-halflings-regular.woff?1444494439) format("woff"), url(../compass/fonts/bootstrap/glyphicons-halflings-regular.ttf?1444494439) format("truetype"), url(../compass/fonts/bootstrap/glyphicons-halflings-regular.svg?1444494439#glyphicons_halflingsregular) format("svg");
+  src: url(../compass/fonts/bootstrap/glyphicons-halflings-regular.eot?1444501389);
+  src: url(../compass/fonts/bootstrap/glyphicons-halflings-regular.eot?&1444501389#iefix) format("embedded-opentype"), url(../compass/fonts/bootstrap/glyphicons-halflings-regular.woff2?1444501389) format("woff2"), url(../compass/fonts/bootstrap/glyphicons-halflings-regular.woff?1444501389) format("woff"), url(../compass/fonts/bootstrap/glyphicons-halflings-regular.ttf?1444501389) format("truetype"), url(../compass/fonts/bootstrap/glyphicons-halflings-regular.svg?1444501389#glyphicons_halflingsregular) format("svg");
 }
 /* line 24, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8778,7 +8778,7 @@ button.close {
 
 /* line 18, ../compass/sass/styles.scss */
 .logo {
-  background-image: url('../images/12questions.png?1444491629');
+  background-image: url('../images/12questions.png?1444501389');
   width: 321px;
   height: 157px;
 }
