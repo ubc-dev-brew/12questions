@@ -8781,4 +8781,16 @@ button.close {
   background-image: url('../images/12questions.png?1444501389');
   width: 321px;
   height: 157px;
+  margin: auto;
+}
+
+/* line 25, ../compass/sass/styles.scss */
+.btn {
+  padding: 15px 25px;
+  margin: 5px;
+}
+
+/* line 30, ../compass/sass/styles.scss */
+.list-group {
+  width: 25%;
 }

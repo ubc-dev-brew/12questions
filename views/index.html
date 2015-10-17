@@ -6,40 +6,128 @@
 	</head>
 
 	<body>
-		<h1>12 Questions</h1>
-		<p>*Click on a cell to reveal who fits that characteristic :)</p>
+        <div class="logo"></div>
+		<h1><small><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>Click on a cell to reveal who fits that characteristic &#9786;</small></h1>
 		<ul>
-			<button type="button" class="btn btn-primary" onclick="showDiv()">From BC?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" >Yes</div>
-			<button type="button" class="btn btn-success" onclick="showDiv()">Not from BC?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-			<button type="button" class="btn btn-info" onclick="showDiv()">Developed an app that's in the store?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" onclick="showDiv()" ></div>
-			<button type="button" class="btn btn-warning" onclick="showDiv()">Had a co-op term in software?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-			<button type="button" class="btn btn-danger" onclick="showDiv()">In Computer Science?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-			<button type="button" class="btn btn-primary" onclick="showDiv()">In Computer Engineering?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-			<button type="button" class="btn btn-success" onclick="showDiv()">Has a Linux computer?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-			<button type="button" class="btn btn-info" onclick="showDiv()">A gamer?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-			<button type="button" class="btn btn-warning" onclick="showDiv()">Lives on campus?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-			<button type="button" class="btn btn-danger" onclick="showDiv()">Has a UBC sweatshirt?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-			<button type="button" class="btn btn-primary" onclick="showDiv()">Founded UBC Launch Pad?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-			<button type="button" class="btn btn-success" onclick="showDiv()">Has experience with UX?</button>
-            <div id="questionAnswer" style="display:none;" class="answer-list" ></div>
-
-		<div class="logo"></div>
+			<button type="button" id="fromBC" class="btn btn-primary" onclick="showDiv(this)">From BC?</button>
+            <div id="answerfromBC" style="display:none;" class="answer-list">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger">Daniel</li>
+                  <li class="list-group-item list-group-item-success">Arabelle</li>
+                  <li class="list-group-item list-group-item-success">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="notBC" class="btn btn-success" onclick="showDiv(this)">Not from BC?</button>
+            <div id="answernotBC" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">Daniel</li>
+                  <li class="list-group-item list-group-item-danger">Arabelle</li>
+                  <li class="list-group-item list-group-item-danger">Jordan</li>
+                  <li class="list-group-item list-group-item-success">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="appStore" class="btn btn-info" onclick="showDiv(this)">Developed an app that's in the store?</button>
+            <div id="answerappStore" style="display:none;" class="answer-list" onclick="showDiv()" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger">Daniel</li>
+                  <li class="list-group-item list-group-item-success">Arabelle</li>
+                  <li class="list-group-item list-group-item-danger">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="coopTerm" class="btn btn-warning" onclick="showDiv(this)">Had a co-op term in software?</button>
+            <div id="answercoopTerm" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger">Daniel</li>
+                  <li class="list-group-item list-group-item-success">Arabelle</li>
+                  <li class="list-group-item list-group-item-danger">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="coopTerm" class="btn btn-danger" onclick="showDiv(this)">In Computer Science?</button>
+            <div id="0001" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger">Daniel</li>
+                  <li class="list-group-item list-group-item-danger">Arabelle</li>
+                  <li class="list-group-item list-group-item-danger">Jordan</li>
+                  <li class="list-group-item list-group-item-success">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="coopTerm" class="btn btn-primary" onclick="showDiv(this)">In Computer Engineering?</button>
+            <div id="0110" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger">Daniel</li>
+                  <li class="list-group-item list-group-item-success">Arabelle</li>
+                  <li class="list-group-item list-group-item-success">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="coopTerm" class="btn btn-success" onclick="showDiv(this)">Has a Linux computer?</button>
+            <div id="0110" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger">Daniel</li>
+                  <li class="list-group-item list-group-item-success">Arabelle</li>
+                  <li class="list-group-item list-group-item-success">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="isGamer" class="btn btn-info" onclick="showDiv(this)">A gamer?</button>
+            <div id="answerisGamer" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-warning">Daniel</li>
+                  <li class="list-group-item list-group-item-danger">Arabelle</li>
+                  <li class="list-group-item list-group-item-warning">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="onCampus" class="btn btn-warning" onclick="showDiv(this)">Lives on campus?</button>
+            <div id="answeronCampus" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger">Daniel</li>
+                  <li class="list-group-item list-group-item-danger">Arabelle</li>
+                  <li class="list-group-item list-group-item-danger">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="ubcShirt" class="btn btn-danger" onclick="showDiv(this)">Has a UBC sweatshirt?</button>
+            <div id="answerubcShirt" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger">Daniel</li>
+                  <li class="list-group-item list-group-item-danger">Arabelle</li>
+                  <li class="list-group-item list-group-item-success">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="foundLaunchPad" class="btn btn-primary" onclick="showDiv(this)">Founded UBC Launch Pad?</button>
+            <div id="answerfoundLaunchPad" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger">Daniel</li>
+                  <li class="list-group-item list-group-item-danger">Arabelle</li>
+                  <li class="list-group-item list-group-item-danger">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
+			<button type="button" id="expUX" class="btn btn-success" onclick="showDiv(this)">Has experience with UX?</button>
+            <div id="answerexpUX" style="display:none;" class="answer-list" >
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-success">Daniel</li>
+                  <li class="list-group-item list-group-item-danger">Arabelle</li>
+                  <li class="list-group-item list-group-item-danger">Jordan</li>
+                  <li class="list-group-item list-group-item-danger">Elaine</li>
+                </ul>
+            </div>
 	</body>
     
     <script>
-        function showDiv() {
-            document.getElementById('questionAnswer').style.display = "block";
+        function showDiv(element) {
+            var answers = document.getElementById("answer" + element.id);
+            if(answers.style.display == "none"){
+                answers.style.display = "block";
+            }
+            else if(answers.style.display == "block"){
+                answers.style.display = "none";
+            }
 		}
     </script>
 </html>
